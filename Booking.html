@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirSales</title>
+    <title>airsales.agency</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link href="./site.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./fonts/Poppins/stylesheet.css">
+   
 </head>
 <body>
     <header class="header">
@@ -21,7 +21,11 @@
         </nav>
     </header> 
     <main id="main-content">
-        <h1 class="H1">Booking</h1>
+       
+        <div id="slogan">
+            <h2 class="neon-text">Booking</h2>
+            <p>Book Your Trip With AirSales</p>
+        </div>
         <form action="Booking.html" method="get" class="forma">
             <div class="formaBox">
                 <label for="name">Name:</label>
@@ -36,10 +40,35 @@
                 <label for="booking_date">Booking Date:</label>
                 <input type="date" id="booking_date" name="booking_date" required><br>
 
-                <input type="submit" value="Submit" class="sub">
+                <label>
+                    <input type="radio" name="booking-option" value="regular" checked>
+                    Regular
+                </label>
+                
+                <label>
+                    <input type="radio" name="booking-option" value="vip">
+                    V.I.P
+                </label>
+                
+                <label>
+                    <input type="radio" name="booking-option" value="luxury">
+                    Luxury
+                </label>
+
+                <input type="submit" value="Proceed To Payment" class="sub" >
             </div>
         </form>
+        
     </main>
+    <div >
+        <h2 class="asideting">Our Partners</h2><br>
+        <ul>
+            <li><a href="https://www.infinity-luxe-chauffeur.com/en/private-chauffeur-ottawa/" target="_blank">Private Chauffeur</a></li><br><br>
+             <li><a href="https://www.aircanada.com/ca/fr/aco/home.html" target="_blank">Air Canada</a></li><br><br>
+             <li><a href="https://www.tripadvisor.ca" target="_blank">Tripadvisor</a></li><br><br>
+             <li><a href="https://www.admtl.com/en" target="_blank">YUL Airport</a></li><br><br>
+        </ul>
+    </div>
     <footer id="footer">
         <nav class="footer-bar" class="footer-bar:hover">            
              <a href="Index.html" class="footer-link">Home</a>

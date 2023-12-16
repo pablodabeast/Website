@@ -1,6 +1,12 @@
+:root{
+  --fontFamily: Copperplate, sans-serif;
+  --BackgroundColor: #2d2d2d;
+  --HoverColor: #000000;
+}
+
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Copperplate ;
   margin: 0 auto;
   background: #2d2d2d;
   margin-right: 30px;
@@ -13,6 +19,7 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .header img {
@@ -21,12 +28,12 @@ body {
 }
 .sign{
 	text-decoration: none;
-  	width: 110px;
+  	width: 150px;
  	height: 35px;
  	line-height: 35px;
   	border-radius: 45px;
   	margin: 10px 10px;
-  	font-family: 'Poppins';
+  	font-family: var(--fontFamily);
     font-size: 11px;
     text-transform: uppercase;
     text-align: center;
@@ -40,10 +47,10 @@ body {
     margin-right: 20px;
 }
 .sign:hover{
-	background: rgb(45, 199, 255);
-  	box-shadow: 0 15px 20px rgb(20, 172, 227);
-  	color: #000000;
-  	transform: translateY(-7px); 
+	background: rgb(75, 93, 99);
+  	box-shadow: 0 15px 20px rgb(77, 92, 98);
+  	color:var(--HoverColor);
+  	transform: translateY(-5px); 
 }
  
 .nav-bar {
@@ -85,10 +92,10 @@ body {
   flex: 1;
   margin-top: 50px;
 }
-#slogan {
+.slogan {
   text-align: center;
   margin: 20px 0;
-  font-family: 'Poppins';
+  font-family: var(--fontFamily);
   font-size: 24px;
   font-weight: 600;
   color: lightslategray;
@@ -96,10 +103,14 @@ body {
 .H2{
   font-size: 50px;
 }
+.asideting{
+  color: whitesmoke;
+
+}
 
 p {
-  font-family: 'Poppins'; 
-  font-size: 19px;
+  font-family: var(--fontFamily); 
+  font-size: 25px;
   line-height: 1.3;
   color: #ced3d8; 
   }
@@ -114,14 +125,14 @@ p {
     margin-top: 40px;
   }
   .tel{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     transition: 0.4s ease;
   }
   .tel:hover{
     font-weight: 900;
   }
   .copy{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     font-size: 15px;
   }
   .footer-bar{
@@ -136,7 +147,7 @@ p {
   }
   .footer-add{
     width: 200px;
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     font-size: 16px;
     transition: 0.4s ease;
     color: #ced3d8; 
@@ -147,7 +158,7 @@ p {
   .footer-link{ 
     color: #ced3d8; 
     width: 120px;
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     font-size: 18px;
     transition: 0.4s ease;
    }
@@ -155,7 +166,7 @@ p {
     font-weight: 900;
   }
   .footer p {
-    font-family: 'Poppins'; 
+    font-family: var(--fontFamily); 
     margin: 0;
     font-size: 14px;
   }
@@ -166,7 +177,7 @@ p {
   }
   a{
     font-family: Arial, sans-serif; 
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     color: #ced3d8; 
     text-decoration: none;
@@ -179,14 +190,14 @@ p {
   .textA{
     width: 900px;
     color: #ced3d8; 
-    font-family: 'Poppins'; 
-    font-size: 19px;
+    font-family: var(--fontFamily); 
+    font-size: 25px;
   }
   .textB{
     width: 900px;
     color: #ced3d8; 
-    font-family: 'Poppins'; 
-    font-size: 19px;
+    font-family: var(--fontFamily); 
+    font-size: 25px;
   }
   .imgContainer {
     display: flex;
@@ -207,18 +218,18 @@ p {
     flex-direction: column;
   }
   .link{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     font-size: 16px;
     margin-top: 15px;
   }
   .H1 {
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     color: #ced3d8;
     width: 100%;
     text-align: center;
   }
   #name, #email, #age{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
   }
   .formaBox{
     margin-left: 20px;
@@ -229,7 +240,7 @@ p {
     height: 35px;
   }
   .forma{
-    width: 800px;
+    width: 500px;
     background: #646464;
     border: 1px solid #646464;
     border-radius: 40px;
@@ -268,19 +279,19 @@ p {
   }
   .pBoxA{
     width: 400px;
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     font-size: 17px;
     color: #ced3d8;
     margin-top: 20px;
     text-align: center;
   }
   .flexH{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     color: #ced3d8;
     font-weight: 900;
   }
   .contBoxThreeH{
-    font-family: 'Poppins';
+    font-family: var(--fontFamily);
     color: #f6f2f2;
   }
   form {
@@ -293,12 +304,13 @@ p {
   
   label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     font-weight: bold;
     color: #1a1a1a;
+    
   }
   
-  input[type="text"],input[type="number"],input[type="email"],input[type="date"] {
+  input[type="text"],input[type="number"],input[type="email"],input[type="date"],input[type="tel"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -311,16 +323,121 @@ p {
     color: white;
     border-radius: 5px;
     font-size: 20px;
+    width: 10vw;
+    margin: 0 auto;
+  }
+  input[type="submit"]:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    
   }
   li{
-    font-family: 'Poppins'; 
+    font-family: var(--fontFamily); 
     font-weight: 600 ;
     font-size: 16px;
     line-height: 1.5;
     color: #f2eded;
     
   }
-  @media screen and (min-width: 370px) and (max-width: 768px) {
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: 0 auto;
+    
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    color: #f6f2f2;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    color: #000000;
+    background-color: #f2f2f2;
+  }
+  div a {
+    font-family: Copperplate;
+    border: 1px solid whitesmoke;
+    font-size: 25px;
+    border-radius: 1.28vw;
+    padding: 0.5vw;
+  }
+  div a:hover{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+  }
+  video{
+    margin-top: 2vw;
+    border: whitesmoke 1vw solid;
+
+  }
+  cite{
+    font-family: cursive;
+    
+  }
+  
+
+
+p a:nth-of-type(1),
+p a:nth-of-type(2),
+p a:nth-of-type(3) {
+    color: #ced3d8;
+   border: none;
+   text-decoration: underline;
+   line-height: 1.3;
+   border-radius: 0px;
+  
+}
+p a:hover{
+  color: #000000;
+  border-radius: 0px;
+}
+
+
+
+a.special{
+  color: #ced3d8;
+    border: none;
+    text-decoration: underline;
+}
+.neon-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 3em;
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.8), 0 0 30px rgba(173, 216, 230, 0.8);
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+      text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.8), 0 0 30px rgba(173, 216, 230, 0.8);
+  }
+  to {
+      text-shadow: 0 0 20px rgba(173, 216, 230, 0.8), 0 0 40px rgba(173, 216, 230, 0.8), 0 0 60px rgba(173, 216, 230, 0.8);
+  }
+}
+.staff{
+  border: #000000 solid 5px;
+  border-radius: 5px;
+
+}
+br{
+  height: 20px;
+}
+  
+  
+ 
+
+  
+  @media screen  and (max-width: 768px) {
 
     .header{
       display: flex;
@@ -345,7 +462,7 @@ p {
     #main-content{
       margin-top: 0;
     }
-    #slogan{
+    .slogan{
       margin-top: 0;
     }
     .textA{
@@ -437,6 +554,17 @@ input[type="submit"] {
   color: white;
   border-radius: 5px;
   font-size: 20px;
+  width: 30vw;
+}
+video{
+  height: 50vw;
+  width: 72vw;
+}
+.staff{
+  height: 50vw;
+  width:62vw;
+  margin: 0 auto;
+  border-radius: 2vw;
 }
 
 

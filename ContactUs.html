@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airsales.agency</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header img" src="./img/logo.png" alt="AirSales Logo">
+        <nav class="nav-bar" id="nav-link:hover">
+            <a href="Index.html" class="sign">Home</a>
+            <a href="AboutUs.html" class="sign">About us</a>
+            <a href="Booking.html" class="sign">Booking</a>
+            <a href="Services.html" class="sign">Services</a>
+            <a href="Packages.html" class="sign">Packages</a>                    
+            <a href="ContactUs.html" class="sign">Contact</a>
+        </nav>
+    </header> 
+    
+    <main id="main-content">
+            <div class="slogan">
+                <h2 class="neon-text">Call Us!</h2>
+                <p>We're always happy to take your call!</p>
+                <a class="tel" href="tel:8193737723">(819) 373-7723</a><br>
+            </div>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Business Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>8:00 AM - 10:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>8:00 AM - 10:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 AM - 10:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>8:00 AM - 10:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>8:00 AM - 10:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>10:00 AM - 6:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              
+               <div class="slogan">
+                <h2 class="H2">Leave your information</h2>
+            </div>
+            <form action="Booking.html" method="get" class="forma">
+                <div class="formaBox">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+                    
+                        <legend>Preferred Contact Method:</legend>
+                        <label for="contact-email"><input type="radio" id="contact-email" name="contact-method" value="email"
+                                checked>Email</label>
+                        <label for="contact-phone"><input type="radio" id="contact-phone" name="contact-method" value="phone">Phone</label>
+                        
+                        <label for="how-heard">How did you hear about us?</label>
+                        <select id="how-heard" name="how_heard" required>
+                            <optgroup label="Internet">
+                                <option value="google">Google</option>
+                                <option value="opera">Opera</option>
+                                <option value="other-website">Link from another website</option>
+                            </optgroup>
+                            <optgroup label="Non-Internet">
+                                <option value="friend">Referred by a friend</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="flyer">Flyer</option>
+                            </optgroup>
+                        </select><br><br><br><br>
+            
+                        <input type="submit" value="Submit" class="sub">
+                </div>
+                </form>
+            
+           
+               
+
+    </main>
+    <div >
+        <h2 class="asideting">Our Partners</h2><br>
+        <ul>
+            <li><a href="https://www.infinity-luxe-chauffeur.com/en/private-chauffeur-ottawa/" target="_blank">Private Chauffeur</a><br><br></li>
+             <li><a href="https://www.aircanada.com/ca/fr/aco/home.html" target="_blank">Air Canada</a><br><br></li>
+             <li><a href="https://www.tripadvisor.ca" target="_blank">Tripadvisor</a><br><br></li>
+             <li><a href="https://www.admtl.com/en" target="_blank">YUL Airport</a><br><br></li>
+        </ul>
+    </div>
+
+
+    <footer id="footer">
+        <nav class="footer-bar" >            
+             <a href="Index.html" class="footer-link">Home</a>
+             <a href="AboutUs.html" class="footer-link">About us</a>
+             <a href="Booking.html" class="footer-link">Booking</a>
+             <a href="Services.html" class="footer-link">Services</a>
+             <a href="Packages.html" class="footer-link">Packages</a>
+             <a href="ContactUs.html" class="footer-link">Contact Us</a>
+         </nav>
+        <address class="address">
+            <p class="footer p">
+                145 Wellington St W<br>
+                Toronto, On<br>
+                Canada,M5W 4J8
+            </p>
+            <a class="tel" href="tel:8193737723">(819) 373-7723</a><br>
+            <a class="footer-add" href="mailto:airsales@gmail.com">airsales@gmail.com</a>
+        </address>
+        <small class="copy">
+            Copyright &copy; 2023, AirSales
+        </small>
+    </footer> 
+    
+</body>
+</html>
