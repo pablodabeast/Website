@@ -521,7 +521,7 @@ br{
 #main-contentA{
   margin-bottom: 20px;
 }
-.nav-link:not([href="Index.html"],[href="Packages.html"],[href="ContactUs.html"]) {
+.nav-link:not([href="index.html"],[href="packages.html"],[href="contactUs.html"]) {
  display: none; 
  margin: 1px ; 
 }
